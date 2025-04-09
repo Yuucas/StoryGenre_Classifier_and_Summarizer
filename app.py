@@ -142,7 +142,7 @@ except Exception as e:
     print(f"Using {len(dataset_examples)} fallback examples.")
 
 
-# --- Gradio Interface --- (Keep as is)
+# --- Gradio Interface ---
 story_input = gr.Textbox(lines=15, placeholder="Paste or type your short story here...", label="Input Short Story")
 genre_output = gr.Textbox(label="Detected Genre", interactive=False)
 summary_output = gr.Textbox(label="Generated Summary", interactive=False)
@@ -166,7 +166,7 @@ iface = gr.Interface(
 )
 
 
-# --- Launch the App --- (Keep as is, added transformers check)
+# --- Launch the App --- 
 if __name__ == "__main__":
     print("Launching Gradio Interface...")
     iface.launch(share=False)
