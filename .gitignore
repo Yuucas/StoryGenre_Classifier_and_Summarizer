@@ -1,0 +1,4 @@
+*.env
+*.txt
+*.gradio
+*__pycache__*
